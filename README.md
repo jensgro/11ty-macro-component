@@ -1,6 +1,3 @@
-# 11ty Sandbox
-
-Very simple project for testing purposes, especially for technical ideas and plugins. 
 # 11ty - Test for macros and components
 
 - [nunjucks macros](https://mozilla.github.io/nunjucks/templating.html#macro)
