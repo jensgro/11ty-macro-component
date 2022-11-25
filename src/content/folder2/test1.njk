@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+title: Test of components out of subfolder
+---
+{% include "partials/components.njk" %}
+
+{{ headline({
+    level: 2,
+    text: "Eine einfache Headline zweiten Grades"
+})}}
+
+{{ button({
+    primary: 'Hi',
+    secondary: 'there'
+}) }}
+
+{{ headline({
+    level: 2,
+    text: "Eine verlinkte Headline zweiten Grades",
+    link: "#"
+})}}
+
+{{ headline({
+    level: 3,
+    text: "Eine Headline driiten Grades mit Klasse",
+    class: "test noch-ein-test"
+})}}
+
