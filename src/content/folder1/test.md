@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.njk
-title: Test of components
+title: Test of components out of subfolder
 ---
 {%- from "components/button/macro.njk" import button -%}
 

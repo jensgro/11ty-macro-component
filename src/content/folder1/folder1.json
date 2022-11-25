@@ -1,0 +1,5 @@
+{
+    "layout": "layouts/base.njk",
+    "permalink": "folder1/{{page.fileSlug}}.html"
+  }
+  

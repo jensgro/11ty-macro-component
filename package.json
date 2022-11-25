@@ -8,6 +8,7 @@
     "serve": "npx @11ty/eleventy --serve --incremental"
   },
   "dependencies": {
-    "@11ty/eleventy": "^1.0.2"
+    "@11ty/eleventy": "^1.0.2",
+    "rimraf": "^3.0.2"
   }
 }

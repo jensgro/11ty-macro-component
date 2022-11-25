@@ -1,0 +1,30 @@
+---
+layout: layouts/base.njk
+title: Test of components out of subfolder - with structure
+---
+{% from "components/button/macro.njk" import button %}
+{% from "components/headline/macro.njk" import headline %}
+{% from "components/headline2/macro.njk" import h %}
+
+{{ headline({
+  level: 2,
+  text: "Eine einfache Headline",
+  class: "test"
+}) }}
+<ol>
+    <li>{{ button({
+        primary: 'Hi'
+      }) }}</li>
+    <li>
+        {{ button({
+          primary: 'Hi',
+          secondary: 'there'
+        }) }}</li>
+</ol>
+
+{{ h({
+  level: 2,
+  text: "Eine einfache Headline",
+  class: "test noch-ein-test"
+}) }}
+
