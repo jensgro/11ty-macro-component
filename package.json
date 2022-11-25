@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "clean": "rimraf _site",
     "serve": "npx @11ty/eleventy --serve --incremental"
   },
   "dependencies": {

@@ -13,8 +13,7 @@ module.exports = (eleventyConfig) => {
         input: 'src',
         output: '_site',
         data: '_data',
-        includes: '_includes',
-        layout: '_includes/layouts'
+        includes: '_includes'
     },
   };
 };
