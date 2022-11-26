@@ -46,3 +46,12 @@ The macro itself is created this way:
 The cool thing is, that you can add as many macros into one file as you like. Unlike partials which are only one per file.
 
 The trick with the ``params`` is crucial for easy handling. 
+
+**The downside** of this solution is, that you need nunjucks marker for your content instead of the usual ``{{ content | safe }}`` which plays very nicely with Markdown. So the way to go is at least with this:
+
+````
+{% block content %}
+{% endblock %}
+````
+
+This leads to the understanding that you can have multiple blocks of that kind and therefor will have more flexible and more complex pages as if only managing content with Markdown.
