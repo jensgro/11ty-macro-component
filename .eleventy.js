@@ -1,4 +1,5 @@
 module.exports = (eleventyConfig) => {
+  // let filters = {% import "macros.njk" as macro with context %};
   return {
     templateFormats: [
       "md",

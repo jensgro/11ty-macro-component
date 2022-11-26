@@ -1,0 +1,15 @@
+{%- macro button(params) -%}
+    <button type="button">{{ params.primary }} {{ params.secondary }}</button>
+{%- endmacro -%}
+
+{%- macro h(params) -%}
+    <h{{params.level}}{%- if params.class %} class="{{params.class}}"{% endif -%}>
+        {%- if params.link -%}
+            <a href="{{params.link}}">
+        {%- endif -%}    
+            {{params.text}}
+        {%- if params.link -%}
+            </a>
+        {%- endif -%}    
+    </h{{params.level}}>
+{%- endmacro -%}

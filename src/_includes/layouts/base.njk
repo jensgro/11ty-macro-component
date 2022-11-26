@@ -1,13 +1,13 @@
-{%- from "system/component.njk" import component -%}
+{% import '../macros.njk' as macro %}
 <!DOCTYPE html>
 <html lang="{{metadata.lang}}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>{{metadata.lang}}</title>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{metadata.title}}</title>
+</head>
+<body>
         <h1>{{ title }}</h1>
         {% block content %}{% endblock %}
-    </body>
+</body>
 </html>

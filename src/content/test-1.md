@@ -1,8 +1,13 @@
 ---
-title: Test of components in subfolder
+title: "Markdown-Test"
+templateEngineOverride: njk,md
 ---
 {%- extends "layouts/base.njk" -%}
+## A Markdown headline outside a block
+
 {% block content %}
+## A Markdown headline inside a block
+
 {{ macro.h({
   level: 2,
   text: "What a great headline"
@@ -23,3 +28,4 @@ title: Test of components in subfolder
   secondary: 'World'
 }) }}
 {% endblock %}
+
