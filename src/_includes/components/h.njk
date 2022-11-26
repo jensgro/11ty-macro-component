@@ -1,0 +1,9 @@
+<h{{params.level}}{%- if params.class %} class="{{params.class}}"{% endif -%}>
+{%- if params.link -%}
+    <a href="{{params.link}}"></a>
+{%- endif -%}    
+    {{params.text}}
+{%- if params.link -%}
+    </a>
+{%- endif -%}    
+</h{{params.level}}>
